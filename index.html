@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataHub - Affordable Mobile Data Plans</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">mino sub</h1>
+      <nav class="space-x-4">
+        <a href="#plans" class="hover:underline">Plans</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-50 py-16 text-center">
+    <h2 class="text-4xl font-bold mb-4">Affordable Mobile Data for Everyone</h2>
+    <p class="text-lg mb-6">Buy data for all networks instantly at the best rates.</p>
+    <a href="#purchase" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Get Started</a>
+  </section>
+
+  <!-- Plans Section -->
+  <section id="plans" class="py-12 container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Our Data Plans</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <h4 class="text-xl font-bold mb-2">MTN</h4>
+        <p class="mb-4">1GB - ₦750<br>5GB - ₦3750<br>10GB - ₦7500</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <h4 class="text-xl font-bold mb-2">Airtel</h4>
+        <p class="mb-4">1GB - ₦750<br>5GB - ₦3750<br>10GB - ₦7500</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <h4 class="text-xl font-bold mb-2">Glo & 9mobile</h4>
+        <p class="mb-4">1GB - ₦290<br>5GB - ₦3750<br>10GB - ₦7500</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Purchase Form -->
+  <section id="purchase" class="bg-white py-12">
+    <div class="container mx-auto px-6 max-w-xl">
+      <h3 class="text-3xl font-bold mb-6 text-center">Buy Data</h3>
+      <form class="space-y-4">
+        <label class="block">
+          <span class="block text-sm font-medium">Select Network</span>
+          <select class="w-full mt-1 border-gray-300 rounded p-2">
+            <option>MTN</option>
+            <option>Airtel</option>
+            <option>Glo</option>
+            <option>9mobile</option>
+          </select>
+        </label>
+        <label class="block">
+          <span class="block text-sm font-medium">Phone Number</span>
+          <input type="text" placeholder="09077434510" class="w-full mt-1 border-gray-300 rounded p-2" />
+        </label>
+        <label class="block">
+          <span class="block text-sm font-medium">Select Data Plan</span>
+          <select class="w-full mt-1 border-gray-300 rounded p-2">
+            <option>1GB</option>
+            <option>5GB</option>
+            <option>10GB</option>
+          </select>
+        </label>
+        <label class="block">
+          <span class="block text-sm font-medium">Payment Method</span>
+          <select class="w-full mt-1 border-gray-300 rounded p-2">
+            <option>Bank Transfer</option>
+            <option>Card Payment</option>
+            <select id="payment-method" class="w-full mt-1 border-gray-300 rounded p-2" onchange="toggleBankDetails(this.value)">
+  <option value="bank">Bank Transfer</option>
+  <option value="card">Card Payment</option>
+</select>
+
+<!-- Bank details section -->
+<div id="bank-details" class="mt-4 p-4 bg-blue-100 rounded text-sm">
+  <p><strong>Bank Name:</strong> Opay</p>
+  <p><strong>Account Name:</strong> Abdullahi Lawal</p>
+  <p><strong>Account Number:</strong> 9077434510</p>
+</div>
+          </select>
+        </label>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700">Proceed to Payment</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-6 max-w-3xl text-center">
+      <h3 class="text-3xl font-bold mb-4">About Us</h3>
+      <p>
+        mino sub is your reliable source for instant mobile data top-ups across all networks in Nigeria. 
+        We provide fast, affordable, and secure data purchases anytime, anywhere.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12">
+    <div class="container mx-auto px-6 max-w-3xl text-center">
+      <h3 class="text-3xl font-bold mb-4">Contact Us</h3>
+      <p>Email: support@datahub.ng | Phone: +234 9077434510</p>
+      <p>Follow us on Instagram, Facebook, and Twitter @mino subNG</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6 mt-12">
+    <div class="text-center">
+      &copy; 2025 mino sub. All rights reserved.
+    </div>
+  </footer>
+<script>
+  function toggleBankDetails(value) {
+    const bankDetails = document.getElementById("bank-details");
+    if (value === "bank") {
+      bankDetails.style.display = "block";
+    } else {
+      bankDetails.style.display = "none";
+    }
+  }
+  document.addEventListener("DOMContentLoaded", () => {
+    toggleBankDetails(document.getElementById("payment-method").value);
+  });
+</script>
+</body>
+</html>
+
+
+
